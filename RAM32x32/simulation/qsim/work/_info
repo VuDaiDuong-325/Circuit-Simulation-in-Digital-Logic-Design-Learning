@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\E\1subject\HK5\lls\thuchanh\btvn1010\simulation\qsim
+v\38decoder 
+Z1 IAgBMS>godS4hNR6ZMzMCG1
+Z2 Vcdf`7=BAnIPCR=?ZJj@k[1
+Z3 dD:\E\1subject\HK5\lls\thuchanh\btvn1010\simulation\qsim
+Z4 w1760584717
+Z5 8ram.vo
+Z6 Fram.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ram.vo|
+Z9 o-work work -O0
+Z10 n@13438decoder@040
+Z11 !s100 fohg7Z;7l@Rz?1zZH;1B62
+Z12 !s108 1760584720.017000
+Z13 !s107 ram.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+v\4x32ram 
+Z14 IkizUc7SobCGOfG9[MW:943
+Z15 Ve^ZiOMY@QW7WOTNLID:C[0
+R3
+Z16 w1760677912
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z17 n@1344x32ram@040
+Z18 !s100 E;bf1S8]]9BRFRQ@>7Q562
+Z19 !s108 1760677912.965000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+v\4x4ram 
+Z20 !s100 @gHE^^PUo:bAezXKN54l92
+Z21 IRU`^C5PThZgHiF_lH?Nz@2
+Z22 VOK:=9IBTUP<]?X9`GD@7;2
+R3
+Z23 w1761278876
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z24 n@1344x4ram@040
+Z25 !s108 1761278877.013000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+v\532decoder 
+Z26 ID1lb_XFV_HYc>nbm:fRMm1
+Z27 V2AeS2G`=P=Q8mUZNaXQ^d3
+R3
+Z28 w1760672735
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z29 n@134532decoder@040
+Z30 !s100 :Dcz1c0W04KIYPc2B5ggL3
+Z31 !s108 1760672736.260000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vram
+Z32 !s100 BATBLkUT4BiO^m3lUH=hn0
+Z33 IK4JQb[Go2e2CVJjmf=zSb2
+Z34 V4K3mUJI7IC`f[5Yff5KG]3
+R3
+Z35 w1761280047
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+!s85 0
+Z36 !s108 1761280047.473000
+R13
+!s101 -O0
+vram_vlg_check_tst
+!i10b 1
+!s100 ]CzZ^2NIGiUPDR0<m><;V2
+Ij6STUPQ24Q`hIAN51Q8Yc2
+Z37 VzeAUO7lg:6KHfKNYh6GKi1
+R3
+Z38 w1761280046
+Z39 8ram.vt
+Z40 Fram.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z41 !s108 1761280047.647000
+Z42 !s107 ram.vt|
+Z43 !s90 -work|work|ram.vt|
+!s101 -O0
+R9
+vram_vlg_sample_tst
+!i10b 1
+Z44 !s100 CGa6R]A?bIlmjcX;LW<kD0
+Z45 ID0L@jLTcELJlLfIV9_OHZ0
+Z46 VkkX;A>JKhamEVUKIjh<S70
+R3
+R38
+R39
+R40
+L0 29
+R7
+r1
+!s85 0
+31
+R41
+R42
+R43
+!s101 -O0
+R9
+vram_vlg_vec_tst
+!i10b 1
+!s100 cllM64bocPBDUR<T<i9S13
+IkSU6=8?2<ZzE_Y=ffF2J32
+Z47 VO7EWmSHZlGJZ7?JZl5j2J0
+R3
+R38
+R39
+R40
+Z48 L0 555
+R7
+r1
+!s85 0
+31
+R41
+R42
+R43
+!s101 -O0
+R9

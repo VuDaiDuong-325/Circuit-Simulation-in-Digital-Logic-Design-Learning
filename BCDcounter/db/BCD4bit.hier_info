@@ -1,0 +1,218 @@
+|BCD4bit
+Carry <= Comb:inst.Carry
+D => Comb:inst.D
+E => Comb:inst.E
+Load => Comb:inst.Load
+I[0] => Comb:inst.I[0]
+I[1] => Comb:inst.I[1]
+I[2] => Comb:inst.I[2]
+I[3] => Comb:inst.I[3]
+CLK => DFFs:inst1.CLK
+O[0] <= DFFs:inst1.Q[0]
+O[1] <= DFFs:inst1.Q[1]
+O[2] <= DFFs:inst1.Q[2]
+O[3] <= DFFs:inst1.Q[3]
+
+
+|BCD4bit|Comb:inst
+Carry <= Comb1:inst.Carry
+D => Comb1:inst.D
+D => inst7.IN0
+D => IP:inst2.D
+D => inst5.IN2
+E => Comb1:inst.E
+Q[0] => inst11.IN0
+Q[0] => Comb1:inst.Q[0]
+Q[0] => inst12.IN3
+Q[1] => inst10.IN0
+Q[1] => Comb1:inst.Q[1]
+Q[2] => inst9.IN0
+Q[2] => Comb1:inst.Q[2]
+Q[3] => inst8.IN0
+Q[3] => Comb1:inst.Q[3]
+Q[3] => inst12.IN1
+Load => inst1.IN1
+Load => IP:inst2.Load
+I[0] => IP:inst2.I[0]
+I[1] => IP:inst2.I[1]
+I[2] => IP:inst2.I[2]
+I[3] => IP:inst2.I[3]
+O[0] <= Comb1:inst.O[0]
+O[1] <= Comb1:inst.O[1]
+O[2] <= Comb1:inst.O[2]
+O[3] <= Comb1:inst.O[3]
+
+
+|BCD4bit|Comb:inst|Comb1:inst
+Carry <= HAS:inst.Cx1
+D => HAS:inst.D
+D => HAS:inst1.D
+D => HAS:inst2.D
+D => HAS:inst3.D
+Q[0] => HAS:inst3.Q
+Q[1] => HAS:inst2.Q
+Q[2] => HAS:inst1.Q
+Q[3] => HAS:inst.Q
+E => HAS:inst3.E
+O[0] <= 21mux:inst8.Y
+O[1] <= 21mux:inst7.Y
+O[2] <= 21mux:inst6.Y
+O[3] <= 21mux:inst10.Y
+S => 21mux:inst8.S
+S => 21mux:inst7.S
+S => 21mux:inst6.S
+S => 21mux:inst10.S
+I[0] => 21mux:inst8.A
+I[1] => 21mux:inst7.A
+I[2] => 21mux:inst6.A
+I[3] => 21mux:inst10.A
+
+
+|BCD4bit|Comb:inst|Comb1:inst|HAS:inst
+Dx <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+E => inst3.IN0
+E => inst1.IN0
+E => inst.IN2
+Q => inst3.IN1
+Q => inst1.IN1
+Q => inst4.IN0
+Cx1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst5.IN0
+D => inst.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|HAS:inst1
+Dx <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+E => inst3.IN0
+E => inst1.IN0
+E => inst.IN2
+Q => inst3.IN1
+Q => inst1.IN1
+Q => inst4.IN0
+Cx1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst5.IN0
+D => inst.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|HAS:inst2
+Dx <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+E => inst3.IN0
+E => inst1.IN0
+E => inst.IN2
+Q => inst3.IN1
+Q => inst1.IN1
+Q => inst4.IN0
+Cx1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst5.IN0
+D => inst.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|HAS:inst3
+Dx <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+E => inst3.IN0
+E => inst1.IN0
+E => inst.IN2
+Q => inst3.IN1
+Q => inst1.IN1
+Q => inst4.IN0
+Cx1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst5.IN0
+D => inst.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|21mux:inst8
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|21mux:inst7
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|21mux:inst6
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|Comb1:inst|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|IP:inst2
+O[0] <= 21mux:inst7.Y
+O[1] <= 21mux:inst6.Y
+O[2] <= 21mux:inst5.Y
+O[3] <= 21mux:inst.Y
+Load => 21mux:inst.S
+Load => 21mux:inst5.S
+Load => 21mux:inst6.S
+Load => 21mux:inst7.S
+D => 21mux:inst.B
+D => 21mux:inst7.B
+I[0] => 21mux:inst7.A
+I[1] => 21mux:inst6.A
+I[2] => 21mux:inst5.A
+I[3] => 21mux:inst.A
+
+
+|BCD4bit|Comb:inst|IP:inst2|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|IP:inst2|21mux:inst5
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|IP:inst2|21mux:inst6
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|Comb:inst|IP:inst2|21mux:inst7
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|BCD4bit|DFFs:inst1
+Q[0] <= inst[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst[3].DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst[3].CLK
+CLK => inst[2].CLK
+CLK => inst[1].CLK
+CLK => inst[0].CLK
+D[0] => inst[0].DATAIN
+D[1] => inst[1].DATAIN
+D[2] => inst[2].DATAIN
+D[3] => inst[3].DATAIN
+
+

@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 32 240 288)
+	(text "Controller" (rect 8 1 62 15)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 239 25 251)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "START" (rect 0 32 40 46)(font "Arial" (font_size 8)))
+		(text "START" (rect 21 59 61 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 80 256)
+		(input)
+		(text "CLK" (rect 0 32 23 46)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 72 207 86 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 256)(pt 80 240))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "Load[2..0]" (rect 24 32 80 46)(font "Arial" (font_size 8)))
+		(text "Load[2..0]" (rect 99 59 155 73)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64)(line_width 3))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "RS" (rect 24 32 40 46)(font "Arial" (font_size 8)))
+		(text "RS" (rect 139 75 155 89)(font "Arial" (font_size 8)))
+		(line (pt 176 80)(pt 160 80))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "AU1S" (rect 24 32 57 46)(font "Arial" (font_size 8)))
+		(text "AU1S" (rect 122 91 155 105)(font "Arial" (font_size 8)))
+		(line (pt 176 96)(pt 160 96))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "AU2S[1..0]" (rect 24 32 85 46)(font "Arial" (font_size 8)))
+		(text "AU2S[1..0]" (rect 94 107 155 121)(font "Arial" (font_size 8)))
+		(line (pt 176 112)(pt 160 112)(line_width 3))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "IE" (rect 24 32 33 46)(font "Arial" (font_size 8)))
+		(text "IE" (rect 146 123 155 137)(font "Arial" (font_size 8)))
+		(line (pt 176 128)(pt 160 128))
+	)
+	(port
+		(pt 176 144)
+		(output)
+		(text "RE[1..0]" (rect 24 32 67 46)(font "Arial" (font_size 8)))
+		(text "RE[1..0]" (rect 112 139 155 153)(font "Arial" (font_size 8)))
+		(line (pt 176 144)(pt 160 144)(line_width 3))
+	)
+	(port
+		(pt 176 160)
+		(output)
+		(text "AUE[1..0]" (rect 24 32 77 46)(font "Arial" (font_size 8)))
+		(text "AUE[1..0]" (rect 102 155 155 169)(font "Arial" (font_size 8)))
+		(line (pt 176 160)(pt 160 160)(line_width 3))
+	)
+	(port
+		(pt 176 176)
+		(output)
+		(text "SRE" (rect 24 32 47 46)(font "Arial" (font_size 8)))
+		(text "SRE" (rect 132 171 155 185)(font "Arial" (font_size 8)))
+		(line (pt 176 176)(pt 160 176))
+	)
+	(port
+		(pt 176 192)
+		(output)
+		(text "DONE" (rect 24 32 57 46)(font "Arial" (font_size 8)))
+		(text "DONE" (rect 122 187 155 201)(font "Arial" (font_size 8)))
+		(line (pt 176 192)(pt 160 192))
+	)
+	(drawing
+		(rectangle (rect 16 24 160 240))
+	)
+)

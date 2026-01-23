@@ -1,0 +1,222 @@
+Simulator report for BCD4bit
+Tue Dec 16 18:49:21 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 280.0 ns     ;
+; Simulation Netlist Size     ; 57 nodes     ;
+; Simulation Coverage         ;      94.74 % ;
+; Total Number of Transitions ; 419          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                               ;               ;
+; Vector input source                                                                        ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/BCDcounter/BCDw.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      94.74 % ;
+; Total nodes checked                                 ; 57           ;
+; Total output ports checked                          ; 57           ;
+; Total output ports with complete 1/0-value coverage ; 54           ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 3            ;
+; Total output ports with no 0-value coverage         ; 3            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                      ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |BCD4bit|Carry                                ; |BCD4bit|Carry                                ; pin_out          ;
+; |BCD4bit|D                                    ; |BCD4bit|D                                    ; out              ;
+; |BCD4bit|E                                    ; |BCD4bit|E                                    ; out              ;
+; |BCD4bit|Load                                 ; |BCD4bit|Load                                 ; out              ;
+; |BCD4bit|I[3]                                 ; |BCD4bit|I[3]                                 ; out              ;
+; |BCD4bit|I[2]                                 ; |BCD4bit|I[2]                                 ; out              ;
+; |BCD4bit|I[1]                                 ; |BCD4bit|I[1]                                 ; out              ;
+; |BCD4bit|I[0]                                 ; |BCD4bit|I[0]                                 ; out              ;
+; |BCD4bit|CLK                                  ; |BCD4bit|CLK                                  ; out              ;
+; |BCD4bit|O[3]                                 ; |BCD4bit|O[3]                                 ; pin_out          ;
+; |BCD4bit|O[2]                                 ; |BCD4bit|O[2]                                 ; pin_out          ;
+; |BCD4bit|O[1]                                 ; |BCD4bit|O[1]                                 ; pin_out          ;
+; |BCD4bit|O[0]                                 ; |BCD4bit|O[0]                                 ; pin_out          ;
+; |BCD4bit|DFFs:inst1|inst[3]                   ; |BCD4bit|DFFs:inst1|inst[3]                   ; regout           ;
+; |BCD4bit|DFFs:inst1|inst[2]                   ; |BCD4bit|DFFs:inst1|inst[2]                   ; regout           ;
+; |BCD4bit|DFFs:inst1|inst[1]                   ; |BCD4bit|DFFs:inst1|inst[1]                   ; regout           ;
+; |BCD4bit|DFFs:inst1|inst[0]                   ; |BCD4bit|DFFs:inst1|inst[0]                   ; regout           ;
+; |BCD4bit|Comb:inst|inst1                      ; |BCD4bit|Comb:inst|inst1                      ; out0             ;
+; |BCD4bit|Comb:inst|inst6                      ; |BCD4bit|Comb:inst|inst6                      ; out0             ;
+; |BCD4bit|Comb:inst|inst5                      ; |BCD4bit|Comb:inst|inst5                      ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|5     ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|5     ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|6     ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|6     ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|7     ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst7|7     ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst5|6     ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst5|6     ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|5      ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|5      ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|6      ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|6      ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|7      ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst|7      ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|5  ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|5  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|6  ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|6  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|7  ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst10|7  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|5   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|5   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|6   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|6   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|7   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst6|7   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|5   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|5   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|7   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|7   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|5   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|5   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|6   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|6   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|7   ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst8|7   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst3 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst3 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst2 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst2 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst1 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst1 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst3|inst  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst3 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst3 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst2 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst2 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst1 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst1 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst2|inst  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst3 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst3 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst2 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst2 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst1 ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst1 ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst1|inst  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst3  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst3  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst2  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst2  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst1  ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst1  ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst   ; |BCD4bit|Comb:inst|Comb1:inst|HAS:inst|inst   ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                     ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |BCD4bit|Comb:inst|inst12                   ; |BCD4bit|Comb:inst|inst12                   ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst6|6   ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst6|6   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|6 ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|6 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                     ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |BCD4bit|Comb:inst|inst12                   ; |BCD4bit|Comb:inst|inst12                   ; out0             ;
+; |BCD4bit|Comb:inst|IP:inst2|21mux:inst6|6   ; |BCD4bit|Comb:inst|IP:inst2|21mux:inst6|6   ; out0             ;
+; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|6 ; |BCD4bit|Comb:inst|Comb1:inst|21mux:inst7|6 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 16 18:49:20 2025
+Info: Command: quartus_sim --simulation_results_format=VWF BCD4bit -c BCD4bit
+Info (324025): Using vector source file "D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/BCDcounter/BCDw.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      94.74 %
+Info (328052): Number of transitions in simulation is 419
+Info (324045): Vector file BCD4bit.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Tue Dec 16 18:49:21 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

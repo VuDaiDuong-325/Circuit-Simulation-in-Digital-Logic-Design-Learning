@@ -1,0 +1,1047 @@
+TimeQuest Timing Analyzer report for Sum8
+Mon Dec 15 16:33:07 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLK'
+ 12. Slow Model Hold: 'CLK'
+ 13. Slow Model Recovery: 'CLK'
+ 14. Slow Model Removal: 'CLK'
+ 15. Slow Model Minimum Pulse Width: 'CLK'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'CLK'
+ 26. Fast Model Hold: 'CLK'
+ 27. Fast Model Recovery: 'CLK'
+ 28. Fast Model Removal: 'CLK'
+ 29. Fast Model Minimum Pulse Width: 'CLK'
+ 30. Setup Times
+ 31. Hold Times
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Recovery Transfers
+ 42. Removal Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Sum8                                                              ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 414.77 MHz ; 414.77 MHz      ; CLK        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -1.411 ; -9.511        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------+
+; Slow Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -0.680 ; -6.120        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 1.450 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -1.380 ; -13.380               ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLK'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.411 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.447      ;
+; -1.408 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.444      ;
+; -1.125 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.161      ;
+; -1.122 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.158      ;
+; -1.066 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.102      ;
+; -1.063 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.099      ;
+; -0.993 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.029      ;
+; -0.987 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.023      ;
+; -0.984 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.020      ;
+; -0.924 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.960      ;
+; -0.923 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.959      ;
+; -0.923 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.959      ;
+; -0.923 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.959      ;
+; -0.923 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.959      ;
+; -0.921 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.957      ;
+; -0.893 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.929      ;
+; -0.890 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.926      ;
+; -0.827 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.863      ;
+; -0.825 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.861      ;
+; -0.823 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.859      ;
+; -0.814 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.850      ;
+; -0.801 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.837      ;
+; -0.765 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.801      ;
+; -0.762 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.798      ;
+; -0.757 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.793      ;
+; -0.754 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.790      ;
+; -0.750 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.786      ;
+; -0.750 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.786      ;
+; -0.750 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.786      ;
+; -0.750 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.786      ;
+; -0.728 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.764      ;
+; -0.707 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.743      ;
+; -0.662 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.698      ;
+; -0.654 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.690      ;
+; -0.652 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.688      ;
+; -0.650 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.686      ;
+; -0.631 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.667      ;
+; -0.628 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.664      ;
+; -0.626 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.662      ;
+; -0.614 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.614 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.614 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.614 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.569 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.605      ;
+; -0.518 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.554      ;
+; -0.516 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.552      ;
+; -0.514 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.550      ;
+; -0.506 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.542      ;
+; -0.468 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.504      ;
+; -0.457 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.493      ;
+; -0.454 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.490      ;
+; -0.442 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.478      ;
+; -0.347 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.383      ;
+; -0.328 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.364      ;
+; -0.304 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.340      ;
+; -0.281 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.317      ;
+; -0.216 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.252      ;
+; -0.209 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.245      ;
+; -0.068 ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst1     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.104      ;
+; -0.059 ; Datapath:inst1|DC:inst1|inst1        ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.095      ;
+; -0.054 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.090      ;
+; -0.051 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.087      ;
+; -0.042 ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.078      ;
+; -0.016 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.052      ;
+; 0.025  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.011      ;
+; 0.029  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.007      ;
+; 0.029  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.007      ;
+; 0.213  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.823      ;
+; 0.224  ; Controller:inst|DFFs:inst1|inst1     ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.812      ;
+; 0.379  ; Datapath:inst1|Register6:inst3|inst  ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.657      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLK'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Datapath:inst1|Register6:inst3|inst  ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.546 ; Controller:inst|DFFs:inst1|inst1     ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.812      ;
+; 0.557 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.823      ;
+; 0.741 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.007      ;
+; 0.741 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.007      ;
+; 0.745 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.011      ;
+; 0.786 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.052      ;
+; 0.812 ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.078      ;
+; 0.821 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.087      ;
+; 0.824 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.090      ;
+; 0.829 ; Datapath:inst1|DC:inst1|inst1        ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.095      ;
+; 0.838 ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst1     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.979 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.245      ;
+; 0.986 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.252      ;
+; 1.051 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.317      ;
+; 1.074 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.340      ;
+; 1.098 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.364      ;
+; 1.117 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.383      ;
+; 1.212 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.478      ;
+; 1.224 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.490      ;
+; 1.227 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.493      ;
+; 1.238 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.276 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.542      ;
+; 1.284 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.550      ;
+; 1.286 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.552      ;
+; 1.288 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.554      ;
+; 1.339 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.605      ;
+; 1.384 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.384 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.384 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.384 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.396 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.662      ;
+; 1.398 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.664      ;
+; 1.401 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.667      ;
+; 1.420 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.686      ;
+; 1.422 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.688      ;
+; 1.424 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.690      ;
+; 1.432 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.698      ;
+; 1.477 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.743      ;
+; 1.498 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.764      ;
+; 1.520 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.786      ;
+; 1.520 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.786      ;
+; 1.520 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.786      ;
+; 1.520 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.786      ;
+; 1.524 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.790      ;
+; 1.527 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.532 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.798      ;
+; 1.535 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.801      ;
+; 1.571 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.837      ;
+; 1.584 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.850      ;
+; 1.593 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.859      ;
+; 1.595 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.861      ;
+; 1.597 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.863      ;
+; 1.660 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.926      ;
+; 1.663 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.929      ;
+; 1.691 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.957      ;
+; 1.693 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.959      ;
+; 1.693 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.959      ;
+; 1.693 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.959      ;
+; 1.693 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.959      ;
+; 1.694 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.960      ;
+; 1.754 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.020      ;
+; 1.757 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.023      ;
+; 1.763 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.029      ;
+; 1.833 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.099      ;
+; 1.836 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.102      ;
+; 1.892 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.158      ;
+; 1.895 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.161      ;
+; 2.178 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.444      ;
+; 2.181 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.447      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'CLK'                                                                                                                            ;
++--------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.680 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.716      ;
++--------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'CLK'                                                                                                                            ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.450 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.716      ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLK   ; Rise       ; CLK                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|DC:inst1|inst1        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|DC:inst1|inst1        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst2 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst2 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst3 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst3 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst4 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst1|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst1|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst2|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst2|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst3|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst3|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst4|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst4|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst2|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst2|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst3|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst3|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|inst1|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|inst1|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|inst1|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|inst1|inst|clk                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; START     ; CLK        ; 0.582 ; 0.582 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; START     ; CLK        ; 0.862 ; 0.862 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 6.575 ; 6.575 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 6.411 ; 6.411 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 6.411 ; 6.411 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 6.409 ; 6.409 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 6.387 ; 6.387 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 6.371 ; 6.371 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 6.575 ; 6.575 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 6.411 ; 6.411 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 6.409 ; 6.409 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 6.387 ; 6.387 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 6.371 ; 6.371 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -0.068 ; -0.133        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Recovery Summary   ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.119 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.761 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -1.380 ; -13.380               ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLK'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.068 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.100      ;
+; -0.065 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.097      ;
+; 0.039  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.993      ;
+; 0.039  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.993      ;
+; 0.039  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.993      ;
+; 0.039  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.993      ;
+; 0.052  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.980      ;
+; 0.055  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.977      ;
+; 0.060  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.972      ;
+; 0.063  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.969      ;
+; 0.089  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.943      ;
+; 0.092  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.940      ;
+; 0.111  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.921      ;
+; 0.121  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.911      ;
+; 0.121  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.911      ;
+; 0.121  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.911      ;
+; 0.121  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.911      ;
+; 0.134  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.898      ;
+; 0.137  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.895      ;
+; 0.138  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.894      ;
+; 0.141  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.891      ;
+; 0.166  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.866      ;
+; 0.173  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.859      ;
+; 0.173  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.859      ;
+; 0.173  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.859      ;
+; 0.173  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.859      ;
+; 0.175  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.857      ;
+; 0.176  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.856      ;
+; 0.178  ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.854      ;
+; 0.179  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.853      ;
+; 0.186  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.846      ;
+; 0.189  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.843      ;
+; 0.205  ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.827      ;
+; 0.208  ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.824      ;
+; 0.217  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.815      ;
+; 0.233  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.799      ;
+; 0.239  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.793      ;
+; 0.255  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.777      ;
+; 0.257  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.775      ;
+; 0.258  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.774      ;
+; 0.258  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.774      ;
+; 0.260  ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.772      ;
+; 0.261  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.771      ;
+; 0.268  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.764      ;
+; 0.309  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.723      ;
+; 0.310  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.722      ;
+; 0.312  ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.720      ;
+; 0.317  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.715      ;
+; 0.324  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.708      ;
+; 0.335  ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.697      ;
+; 0.338  ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.694      ;
+; 0.345  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.687      ;
+; 0.374  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.658      ;
+; 0.384  ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.648      ;
+; 0.390  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.642      ;
+; 0.405  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.627      ;
+; 0.434  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.598      ;
+; 0.437  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.595      ;
+; 0.482  ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst1     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.550      ;
+; 0.492  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.540      ;
+; 0.495  ; Datapath:inst1|DC:inst1|inst1        ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.537      ;
+; 0.505  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.527      ;
+; 0.510  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.522      ;
+; 0.513  ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.519      ;
+; 0.536  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.496      ;
+; 0.537  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.495      ;
+; 0.538  ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.494      ;
+; 0.620  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.412      ;
+; 0.625  ; Controller:inst|DFFs:inst1|inst1     ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.407      ;
+; 0.665  ; Datapath:inst1|Register6:inst3|inst  ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665  ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.367      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLK'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Datapath:inst1|Register6:inst3|inst  ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.255 ; Controller:inst|DFFs:inst1|inst1     ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.407      ;
+; 0.260 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.412      ;
+; 0.342 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.494      ;
+; 0.343 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.495      ;
+; 0.344 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.496      ;
+; 0.367 ; Datapath:inst1|Register6:inst3|inst1 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.370 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.375 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.527      ;
+; 0.385 ; Datapath:inst1|DC:inst1|inst1        ; Controller:inst|DFFs:inst1|inst      ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.537      ;
+; 0.388 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.540      ;
+; 0.398 ; Controller:inst|DFFs:inst1|inst      ; Controller:inst|DFFs:inst1|inst1     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.550      ;
+; 0.443 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.595      ;
+; 0.446 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.598      ;
+; 0.475 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.627      ;
+; 0.490 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|DC:inst1|inst1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.642      ;
+; 0.496 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.506 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.658      ;
+; 0.535 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.542 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.694      ;
+; 0.545 ; Datapath:inst1|Register6:inst3|inst2 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.697      ;
+; 0.556 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.708      ;
+; 0.563 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.715      ;
+; 0.568 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.720      ;
+; 0.570 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.571 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.723      ;
+; 0.612 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.764      ;
+; 0.619 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.771      ;
+; 0.620 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.772      ;
+; 0.622 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.774      ;
+; 0.622 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.774      ;
+; 0.623 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.775      ;
+; 0.625 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.777      ;
+; 0.641 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.793      ;
+; 0.647 ; Datapath:inst1|Counter:inst|inst     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.799      ;
+; 0.663 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.815      ;
+; 0.672 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.824      ;
+; 0.675 ; Datapath:inst1|Register6:inst3|inst3 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.827      ;
+; 0.691 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.843      ;
+; 0.694 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.846      ;
+; 0.701 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.853      ;
+; 0.702 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.854      ;
+; 0.704 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.856      ;
+; 0.705 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.857      ;
+; 0.707 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.707 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.707 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.707 ; Controller:inst|DFFs:inst1|inst      ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.714 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.866      ;
+; 0.739 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.891      ;
+; 0.742 ; Datapath:inst1|Counter:inst|inst1    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.894      ;
+; 0.743 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.895      ;
+; 0.746 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.898      ;
+; 0.759 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.911      ;
+; 0.759 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.911      ;
+; 0.759 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.911      ;
+; 0.759 ; Datapath:inst1|DC:inst1|inst1        ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.911      ;
+; 0.769 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.921      ;
+; 0.788 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.940      ;
+; 0.791 ; Datapath:inst1|Counter:inst|inst3    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.943      ;
+; 0.817 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.969      ;
+; 0.820 ; Datapath:inst1|Register6:inst3|inst4 ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.972      ;
+; 0.825 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.977      ;
+; 0.828 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.980      ;
+; 0.841 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.993      ;
+; 0.841 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.993      ;
+; 0.841 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.993      ;
+; 0.841 ; Controller:inst|DFFs:inst1|inst1     ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.993      ;
+; 0.945 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.097      ;
+; 0.948 ; Datapath:inst1|Counter:inst|inst2    ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.100      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'CLK'                                                                                                                           ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
+; 0.119 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.913      ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'CLK'                                                                                                                            ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst1    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst     ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Counter:inst|inst3    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst4 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst3 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst2 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst1 ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
+; 0.761 ; Controller:inst|DFFs:inst1|inst ; Datapath:inst1|Register6:inst3|inst  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.913      ;
++-------+---------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLK   ; Rise       ; CLK                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Controller:inst|DFFs:inst1|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Counter:inst|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|DC:inst1|inst1        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|DC:inst1|inst1        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst2 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst2 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst3 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst3 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst4 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Datapath:inst1|Register6:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK~clkctrl|inclk[0]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK~clkctrl|outclk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst1|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst1|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst1|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst2|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst2|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst3|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst3|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst4|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst4|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst3|inst|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst3|inst|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst2|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst2|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst3|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst3|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst1|inst|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst1|inst|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|inst1|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|inst1|inst1|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|inst1|inst|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|inst1|inst|clk                  ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; START     ; CLK        ; -0.081 ; -0.081 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; START     ; CLK        ; 0.769 ; 0.769 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 3.725 ; 3.725 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 3.688 ; 3.688 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 3.684 ; 3.684 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 3.688 ; 3.688 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 3.664 ; 3.664 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 3.656 ; 3.656 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 3.725 ; 3.725 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 3.684 ; 3.684 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 3.688 ; 3.688 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 3.664 ; 3.664 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 3.656 ; 3.656 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.411 ; 0.215 ; -0.680   ; 0.761   ; -1.380              ;
+;  CLK             ; -1.411 ; 0.215 ; -0.680   ; 0.761   ; -1.380              ;
+; Design-wide TNS  ; -9.511 ; 0.0   ; -6.12    ; 0.0     ; -13.38              ;
+;  CLK             ; -9.511 ; 0.000 ; -6.120   ; 0.000   ; -13.380             ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; START     ; CLK        ; 0.582 ; 0.582 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; START     ; CLK        ; 0.862 ; 0.862 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 6.575 ; 6.575 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 6.411 ; 6.411 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 6.411 ; 6.411 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 6.409 ; 6.409 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 6.387 ; 6.387 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 6.368 ; 6.368 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 6.371 ; 6.371 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DONE      ; CLK        ; 3.725 ; 3.725 ; Rise       ; CLK             ;
+; Sum[*]    ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[0]   ; CLK        ; 3.684 ; 3.684 ; Rise       ; CLK             ;
+;  Sum[1]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[2]   ; CLK        ; 3.688 ; 3.688 ; Rise       ; CLK             ;
+;  Sum[3]   ; CLK        ; 3.664 ; 3.664 ; Rise       ; CLK             ;
+;  Sum[4]   ; CLK        ; 3.648 ; 3.648 ; Rise       ; CLK             ;
+;  Sum[5]   ; CLK        ; 3.656 ; 3.656 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 78       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 78       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 9        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 9        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 11    ; 11   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 15 16:33:06 2025
+Info: Command: quartus_sta Sum8 -c Sum8
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Sum8.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.411
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.411        -9.511 CLK 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CLK 
+Info (332146): Worst-case recovery slack is -0.680
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.680        -6.120 CLK 
+Info (332146): Worst-case removal slack is 1.450
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.450         0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -13.380 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.068
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.068        -0.133 CLK 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLK 
+Info (332146): Worst-case recovery slack is 0.119
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.119         0.000 CLK 
+Info (332146): Worst-case removal slack is 0.761
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.761         0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -13.380 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4541 megabytes
+    Info: Processing ended: Mon Dec 15 16:33:07 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

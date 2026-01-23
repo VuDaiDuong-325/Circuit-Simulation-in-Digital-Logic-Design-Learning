@@ -1,0 +1,111 @@
+|VersatileShifter
+Res[0] <= DFFvs:inst1.Q[0]
+Res[1] <= DFFvs:inst1.Q[1]
+Res[2] <= DFFvs:inst1.Q[2]
+Res[3] <= DFFvs:inst1.Q[3]
+RST => inst3.IN0
+CLK => DFFvs:inst1.CLK
+IL => Comb:inst.IL
+IR => Comb:inst.IR
+I[0] => Comb:inst.I[0]
+I[1] => Comb:inst.I[1]
+I[2] => Comb:inst.I[2]
+I[3] => Comb:inst.I[3]
+S[0] => Comb:inst.S[0]
+S[1] => Comb:inst.S[1]
+
+
+|VersatileShifter|DFFvs:inst1
+Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLK => inst3.CLK
+CLK => inst2.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+D[0] => inst3.DATAIN
+D[1] => inst2.DATAIN
+D[2] => inst1.DATAIN
+D[3] => inst.DATAIN
+
+
+|VersatileShifter|Comb:inst
+D[0] <= MUX41:inst3.Q
+D[1] <= MUX41:inst2.Q
+D[2] <= MUX41:inst1.Q
+D[3] <= MUX41:inst.Q
+S[0] => MUX41:inst.S0
+S[0] => MUX41:inst1.S0
+S[0] => MUX41:inst2.S0
+S[0] => MUX41:inst3.S0
+S[1] => MUX41:inst.S1
+S[1] => MUX41:inst1.S1
+S[1] => MUX41:inst2.S1
+S[1] => MUX41:inst3.S1
+IL => MUX41:inst.D2
+Q[0] => MUX41:inst2.D3
+Q[0] => MUX41:inst3.D0
+Q[1] => MUX41:inst1.D3
+Q[1] => MUX41:inst2.D0
+Q[1] => MUX41:inst3.D2
+Q[2] => MUX41:inst.D3
+Q[2] => MUX41:inst1.D0
+Q[2] => MUX41:inst2.D2
+Q[3] => MUX41:inst.D0
+Q[3] => MUX41:inst1.D2
+I[0] => MUX41:inst3.D1
+I[1] => MUX41:inst2.D1
+I[2] => MUX41:inst1.D1
+I[3] => MUX41:inst.D1
+IR => MUX41:inst3.D3
+
+
+|VersatileShifter|Comb:inst|MUX41:inst
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|VersatileShifter|Comb:inst|MUX41:inst1
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|VersatileShifter|Comb:inst|MUX41:inst2
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|VersatileShifter|Comb:inst|MUX41:inst3
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+

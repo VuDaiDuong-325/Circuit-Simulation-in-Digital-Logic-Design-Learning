@@ -1,0 +1,361 @@
+Simulator report for 1R2W
+Sun Oct 19 10:28:55 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 270.0 ns     ;
+; Simulation Netlist Size     ; 134 nodes    ;
+; Simulation Coverage         ;      41.79 % ;
+; Total Number of Transitions ; 240          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                              ;               ;
+; Vector input source                                                                        ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/RS_1R2W/1r2wwf.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                               ; On            ;
+; Check outputs                                                                              ; Off                                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      41.79 % ;
+; Total nodes checked                                 ; 134          ;
+; Total output ports checked                          ; 134          ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 65           ;
+; Total output ports with no 1-value coverage         ; 69           ;
+; Total output ports with no 0-value coverage         ; 74           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                              ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |1R2W|O3                          ; |1R2W|O3                          ; pin_out          ;
+; |1R2W|O3~0                        ; |1R2W|O3~0                        ; out0             ;
+; |1R2W|WEB                         ; |1R2W|WEB                         ; out              ;
+; |1R2W|WEA                         ; |1R2W|WEA                         ; out              ;
+; |1R2W|RA0                         ; |1R2W|RA0                         ; out              ;
+; |1R2W|IA3                         ; |1R2W|IA3                         ; out              ;
+; |1R2W|IB3                         ; |1R2W|IB3                         ; out              ;
+; |1R2W|IA2                         ; |1R2W|IA2                         ; out              ;
+; |1R2W|IB2                         ; |1R2W|IB2                         ; out              ;
+; |1R2W|IA1                         ; |1R2W|IA1                         ; out              ;
+; |1R2W|IB1                         ; |1R2W|IB1                         ; out              ;
+; |1R2W|IA0                         ; |1R2W|IA0                         ; out              ;
+; |1R2W|IB0                         ; |1R2W|IB0                         ; out              ;
+; |1R2W|CLK                         ; |1R2W|CLK                         ; out              ;
+; |1R2W|O2                          ; |1R2W|O2                          ; pin_out          ;
+; |1R2W|O2~0                        ; |1R2W|O2~0                        ; out0             ;
+; |1R2W|O1                          ; |1R2W|O1                          ; pin_out          ;
+; |1R2W|O1~0                        ; |1R2W|O1~0                        ; out0             ;
+; |1R2W|O0                          ; |1R2W|O0                          ; pin_out          ;
+; |1R2W|O0~0                        ; |1R2W|O0~0                        ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst4  ; |1R2W|Word:inst6|RFC:inst3|inst4  ; out              ;
+; |1R2W|Word:inst6|RFC:inst3|inst   ; |1R2W|Word:inst6|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst6|RFC:inst3|inst10 ; |1R2W|Word:inst6|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst8  ; |1R2W|Word:inst6|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst4  ; |1R2W|Word:inst6|RFC:inst2|inst4  ; out              ;
+; |1R2W|Word:inst6|RFC:inst2|inst10 ; |1R2W|Word:inst6|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst8  ; |1R2W|Word:inst6|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst4  ; |1R2W|Word:inst6|RFC:inst1|inst4  ; out              ;
+; |1R2W|Word:inst6|RFC:inst|inst4   ; |1R2W|Word:inst6|RFC:inst|inst4   ; out              ;
+; |1R2W|Word:inst6|RFC:inst|inst    ; |1R2W|Word:inst6|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst6|RFC:inst|inst10  ; |1R2W|Word:inst6|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst|inst8   ; |1R2W|Word:inst6|RFC:inst|inst8   ; out0             ;
+; |1R2W|2to4RD:inst2|inst           ; |1R2W|2to4RD:inst2|inst           ; out0             ;
+; |1R2W|2to4RD:inst2|inst1          ; |1R2W|2to4RD:inst2|inst1          ; out0             ;
+; |1R2W|2to4WD:inst|inst            ; |1R2W|2to4WD:inst|inst            ; out0             ;
+; |1R2W|2to4WD:inst1|inst           ; |1R2W|2to4WD:inst1|inst           ; out0             ;
+; |1R2W|Word:inst4|RFC:inst3|inst4  ; |1R2W|Word:inst4|RFC:inst3|inst4  ; out              ;
+; |1R2W|Word:inst4|RFC:inst3|inst   ; |1R2W|Word:inst4|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst4|RFC:inst3|inst10 ; |1R2W|Word:inst4|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst4|RFC:inst3|inst9  ; |1R2W|Word:inst4|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst3|inst6  ; |1R2W|Word:inst4|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst2|inst4  ; |1R2W|Word:inst4|RFC:inst2|inst4  ; out              ;
+; |1R2W|Word:inst4|RFC:inst2|inst   ; |1R2W|Word:inst4|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst4|RFC:inst2|inst10 ; |1R2W|Word:inst4|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst4|RFC:inst2|inst8  ; |1R2W|Word:inst4|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst2|inst9  ; |1R2W|Word:inst4|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst1|inst4  ; |1R2W|Word:inst4|RFC:inst1|inst4  ; out              ;
+; |1R2W|Word:inst4|RFC:inst1|inst   ; |1R2W|Word:inst4|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst4|RFC:inst1|inst10 ; |1R2W|Word:inst4|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst4|RFC:inst1|inst8  ; |1R2W|Word:inst4|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst1|inst9  ; |1R2W|Word:inst4|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst|inst4   ; |1R2W|Word:inst4|RFC:inst|inst4   ; out              ;
+; |1R2W|Word:inst4|RFC:inst|inst    ; |1R2W|Word:inst4|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst4|RFC:inst|inst10  ; |1R2W|Word:inst4|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst|inst8   ; |1R2W|Word:inst4|RFC:inst|inst8   ; out0             ;
+; |1R2W|Word:inst4|RFC:inst|inst9   ; |1R2W|Word:inst4|RFC:inst|inst9   ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |1R2W|WAB0                        ; |1R2W|WAB0                        ; out              ;
+; |1R2W|WAA0                        ; |1R2W|WAA0                        ; out              ;
+; |1R2W|WAA1                        ; |1R2W|WAA1                        ; out              ;
+; |1R2W|Word:inst7|RFC:inst3|inst4  ; |1R2W|Word:inst7|RFC:inst3|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst3|inst   ; |1R2W|Word:inst7|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst3|inst10 ; |1R2W|Word:inst7|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst8  ; |1R2W|Word:inst7|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst9  ; |1R2W|Word:inst7|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst6  ; |1R2W|Word:inst7|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst4  ; |1R2W|Word:inst7|RFC:inst2|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst2|inst   ; |1R2W|Word:inst7|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst2|inst10 ; |1R2W|Word:inst7|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst8  ; |1R2W|Word:inst7|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst9  ; |1R2W|Word:inst7|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst6  ; |1R2W|Word:inst7|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst4  ; |1R2W|Word:inst7|RFC:inst1|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst1|inst   ; |1R2W|Word:inst7|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst1|inst10 ; |1R2W|Word:inst7|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst8  ; |1R2W|Word:inst7|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst9  ; |1R2W|Word:inst7|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst6  ; |1R2W|Word:inst7|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst4   ; |1R2W|Word:inst7|RFC:inst|inst4   ; out              ;
+; |1R2W|Word:inst7|RFC:inst|inst    ; |1R2W|Word:inst7|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst7|RFC:inst|inst10  ; |1R2W|Word:inst7|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst8   ; |1R2W|Word:inst7|RFC:inst|inst8   ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst9   ; |1R2W|Word:inst7|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst6   ; |1R2W|Word:inst7|RFC:inst|inst6   ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst9  ; |1R2W|Word:inst6|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst6  ; |1R2W|Word:inst6|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst9  ; |1R2W|Word:inst6|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst6  ; |1R2W|Word:inst6|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst9  ; |1R2W|Word:inst6|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst6  ; |1R2W|Word:inst6|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst|inst9   ; |1R2W|Word:inst6|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst6|RFC:inst|inst6   ; |1R2W|Word:inst6|RFC:inst|inst6   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst4  ; |1R2W|Word:inst5|RFC:inst3|inst4  ; out              ;
+; |1R2W|Word:inst5|RFC:inst3|inst   ; |1R2W|Word:inst5|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst3|inst10 ; |1R2W|Word:inst5|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst8  ; |1R2W|Word:inst5|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst9  ; |1R2W|Word:inst5|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst6  ; |1R2W|Word:inst5|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst4  ; |1R2W|Word:inst5|RFC:inst2|inst4  ; out              ;
+; |1R2W|Word:inst5|RFC:inst2|inst   ; |1R2W|Word:inst5|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst2|inst10 ; |1R2W|Word:inst5|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst8  ; |1R2W|Word:inst5|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst9  ; |1R2W|Word:inst5|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst6  ; |1R2W|Word:inst5|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst4  ; |1R2W|Word:inst5|RFC:inst1|inst4  ; out              ;
+; |1R2W|Word:inst5|RFC:inst1|inst   ; |1R2W|Word:inst5|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst1|inst10 ; |1R2W|Word:inst5|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst8  ; |1R2W|Word:inst5|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst9  ; |1R2W|Word:inst5|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst6  ; |1R2W|Word:inst5|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst4   ; |1R2W|Word:inst5|RFC:inst|inst4   ; out              ;
+; |1R2W|Word:inst5|RFC:inst|inst    ; |1R2W|Word:inst5|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst5|RFC:inst|inst10  ; |1R2W|Word:inst5|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst8   ; |1R2W|Word:inst5|RFC:inst|inst8   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst9   ; |1R2W|Word:inst5|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst6   ; |1R2W|Word:inst5|RFC:inst|inst6   ; out0             ;
+; |1R2W|2to4RD:inst2|inst3          ; |1R2W|2to4RD:inst2|inst3          ; out0             ;
+; |1R2W|2to4WD:inst|inst1           ; |1R2W|2to4WD:inst|inst1           ; out0             ;
+; |1R2W|2to4WD:inst|inst2           ; |1R2W|2to4WD:inst|inst2           ; out0             ;
+; |1R2W|2to4WD:inst|inst3           ; |1R2W|2to4WD:inst|inst3           ; out0             ;
+; |1R2W|2to4WD:inst1|inst1          ; |1R2W|2to4WD:inst1|inst1          ; out0             ;
+; |1R2W|2to4WD:inst1|inst3          ; |1R2W|2to4WD:inst1|inst3          ; out0             ;
+; |1R2W|Word:inst4|RFC:inst3|inst8  ; |1R2W|Word:inst4|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst2|inst6  ; |1R2W|Word:inst4|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst1|inst6  ; |1R2W|Word:inst4|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst|inst6   ; |1R2W|Word:inst4|RFC:inst|inst6   ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |1R2W|WAB0                        ; |1R2W|WAB0                        ; out              ;
+; |1R2W|WAB1                        ; |1R2W|WAB1                        ; out              ;
+; |1R2W|WAA0                        ; |1R2W|WAA0                        ; out              ;
+; |1R2W|WAA1                        ; |1R2W|WAA1                        ; out              ;
+; |1R2W|RA1                         ; |1R2W|RA1                         ; out              ;
+; |1R2W|RE                          ; |1R2W|RE                          ; out              ;
+; |1R2W|Word:inst7|RFC:inst3|inst4  ; |1R2W|Word:inst7|RFC:inst3|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst3|inst   ; |1R2W|Word:inst7|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst3|inst10 ; |1R2W|Word:inst7|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst8  ; |1R2W|Word:inst7|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst9  ; |1R2W|Word:inst7|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst3|inst6  ; |1R2W|Word:inst7|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst4  ; |1R2W|Word:inst7|RFC:inst2|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst2|inst   ; |1R2W|Word:inst7|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst2|inst10 ; |1R2W|Word:inst7|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst8  ; |1R2W|Word:inst7|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst9  ; |1R2W|Word:inst7|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst2|inst6  ; |1R2W|Word:inst7|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst4  ; |1R2W|Word:inst7|RFC:inst1|inst4  ; out              ;
+; |1R2W|Word:inst7|RFC:inst1|inst   ; |1R2W|Word:inst7|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst7|RFC:inst1|inst10 ; |1R2W|Word:inst7|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst8  ; |1R2W|Word:inst7|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst9  ; |1R2W|Word:inst7|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst1|inst6  ; |1R2W|Word:inst7|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst4   ; |1R2W|Word:inst7|RFC:inst|inst4   ; out              ;
+; |1R2W|Word:inst7|RFC:inst|inst    ; |1R2W|Word:inst7|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst7|RFC:inst|inst10  ; |1R2W|Word:inst7|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst8   ; |1R2W|Word:inst7|RFC:inst|inst8   ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst9   ; |1R2W|Word:inst7|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst7|RFC:inst|inst6   ; |1R2W|Word:inst7|RFC:inst|inst6   ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst9  ; |1R2W|Word:inst6|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst3|inst6  ; |1R2W|Word:inst6|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst   ; |1R2W|Word:inst6|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst6|RFC:inst2|inst9  ; |1R2W|Word:inst6|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst2|inst6  ; |1R2W|Word:inst6|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst   ; |1R2W|Word:inst6|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst6|RFC:inst1|inst10 ; |1R2W|Word:inst6|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst8  ; |1R2W|Word:inst6|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst9  ; |1R2W|Word:inst6|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst1|inst6  ; |1R2W|Word:inst6|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst6|RFC:inst|inst9   ; |1R2W|Word:inst6|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst6|RFC:inst|inst6   ; |1R2W|Word:inst6|RFC:inst|inst6   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst   ; |1R2W|Word:inst5|RFC:inst3|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst3|inst10 ; |1R2W|Word:inst5|RFC:inst3|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst8  ; |1R2W|Word:inst5|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst9  ; |1R2W|Word:inst5|RFC:inst3|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst3|inst6  ; |1R2W|Word:inst5|RFC:inst3|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst   ; |1R2W|Word:inst5|RFC:inst2|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst2|inst10 ; |1R2W|Word:inst5|RFC:inst2|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst8  ; |1R2W|Word:inst5|RFC:inst2|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst9  ; |1R2W|Word:inst5|RFC:inst2|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst2|inst6  ; |1R2W|Word:inst5|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst   ; |1R2W|Word:inst5|RFC:inst1|inst   ; regout           ;
+; |1R2W|Word:inst5|RFC:inst1|inst10 ; |1R2W|Word:inst5|RFC:inst1|inst10 ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst8  ; |1R2W|Word:inst5|RFC:inst1|inst8  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst9  ; |1R2W|Word:inst5|RFC:inst1|inst9  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst1|inst6  ; |1R2W|Word:inst5|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst    ; |1R2W|Word:inst5|RFC:inst|inst    ; regout           ;
+; |1R2W|Word:inst5|RFC:inst|inst10  ; |1R2W|Word:inst5|RFC:inst|inst10  ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst8   ; |1R2W|Word:inst5|RFC:inst|inst8   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst9   ; |1R2W|Word:inst5|RFC:inst|inst9   ; out0             ;
+; |1R2W|Word:inst5|RFC:inst|inst6   ; |1R2W|Word:inst5|RFC:inst|inst6   ; out0             ;
+; |1R2W|2to4RD:inst2|inst2          ; |1R2W|2to4RD:inst2|inst2          ; out0             ;
+; |1R2W|2to4RD:inst2|inst3          ; |1R2W|2to4RD:inst2|inst3          ; out0             ;
+; |1R2W|2to4WD:inst|inst1           ; |1R2W|2to4WD:inst|inst1           ; out0             ;
+; |1R2W|2to4WD:inst|inst2           ; |1R2W|2to4WD:inst|inst2           ; out0             ;
+; |1R2W|2to4WD:inst|inst3           ; |1R2W|2to4WD:inst|inst3           ; out0             ;
+; |1R2W|2to4WD:inst1|inst1          ; |1R2W|2to4WD:inst1|inst1          ; out0             ;
+; |1R2W|2to4WD:inst1|inst2          ; |1R2W|2to4WD:inst1|inst2          ; out0             ;
+; |1R2W|2to4WD:inst1|inst3          ; |1R2W|2to4WD:inst1|inst3          ; out0             ;
+; |1R2W|Word:inst4|RFC:inst3|inst8  ; |1R2W|Word:inst4|RFC:inst3|inst8  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst2|inst6  ; |1R2W|Word:inst4|RFC:inst2|inst6  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst1|inst6  ; |1R2W|Word:inst4|RFC:inst1|inst6  ; out0             ;
+; |1R2W|Word:inst4|RFC:inst|inst6   ; |1R2W|Word:inst4|RFC:inst|inst6   ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Oct 19 10:28:54 2025
+Info: Command: quartus_sim --simulation_results_format=VWF 1R2W -c 1R2W
+Info (324025): Using vector source file "D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/RS_1R2W/1r2wwf.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      41.79 %
+Info (328052): Number of transitions in simulation is 240
+Info (324045): Vector file 1R2W.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Sun Oct 19 10:28:55 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

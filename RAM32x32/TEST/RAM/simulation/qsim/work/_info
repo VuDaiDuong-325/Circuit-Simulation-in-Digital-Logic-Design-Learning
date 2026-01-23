@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\letro\Downloads\RAM\simulation\qsim
+vRAM32x32
+Z1 !s100 i<N89eQ[3^2ZzW987<cb<1
+Z2 I9jJRc9<V9Xak=l2Dl6<]a1
+Z3 V9M?Yef`C_ejBii^d8YZ;R0
+Z4 dC:\Users\letro\Downloads\RAM\simulation\qsim
+Z5 w1761128878
+Z6 8RAM.vo
+Z7 FRAM.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|RAM.vo|
+Z10 o-work work -O0
+Z11 n@r@a@m32x32
+!i10b 1
+!s85 0
+Z12 !s108 1761128879.902000
+Z13 !s107 RAM.vo|
+!s101 -O0
+vRAM32x32_vlg_check_tst
+!i10b 1
+Z14 !s100 <9bLBo@`Ab]cPFJ@Jd`9@0
+Z15 I=inA=5m=GXW2BIFamE]9@3
+Z16 V0EiN3hjbQ^4768OGHodBA3
+R4
+Z17 w1761128877
+Z18 8RAM.vt
+Z19 FRAM.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z20 !s108 1761128880.327000
+Z21 !s107 RAM.vt|
+Z22 !s90 -work|work|RAM.vt|
+!s101 -O0
+R10
+Z23 n@r@a@m32x32_vlg_check_tst
+vRAM32x32_vlg_sample_tst
+!i10b 1
+Z24 !s100 fM6eGlkL1[AET]Q8Q=MH@1
+Z25 Iifaz8P?k94TASPRcNCfQD2
+Z26 VLeM>JdbK=A;<]7o`X5Ck=1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@r@a@m32x32_vlg_sample_tst
+vRAM32x32_vlg_vec_tst
+!i10b 1
+!s100 X8D1;lVdc]DY_NGKV:c1U0
+IUWk`kZ1<NdH=JM@TS>JZc2
+Z28 VFG8@TZ:eK[nBFgA^kSbn61
+R4
+R17
+R18
+R19
+Z29 L0 557
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@r@a@m32x32_vlg_vec_tst

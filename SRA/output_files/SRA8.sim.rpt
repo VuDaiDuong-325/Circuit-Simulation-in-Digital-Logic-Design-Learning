@@ -1,0 +1,728 @@
+Simulator report for SRA8
+Sun Dec 14 22:18:22 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 360.0 ns     ;
+; Simulation Netlist Size     ; 519 nodes    ;
+; Simulation Coverage         ;      85.93 % ;
+; Total Number of Transitions ; 2883         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                            ;               ;
+; Vector input source                                                                        ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Squarewf.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                             ; On            ;
+; Check outputs                                                                              ; Off                                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      85.93 % ;
+; Total nodes checked                                 ; 519          ;
+; Total output ports checked                          ; 519          ;
+; Total output ports with complete 1/0-value coverage ; 446          ;
+; Total output ports with no 1/0-value coverage       ; 47           ;
+; Total output ports with no 1-value coverage         ; 63           ;
+; Total output ports with no 0-value coverage         ; 57           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |Square|DONE                                                                                                ; |Square|DONE                                                                                                ; pin_out          ;
+; |Square|START                                                                                               ; |Square|START                                                                                               ; out              ;
+; |Square|CLK                                                                                                 ; |Square|CLK                                                                                                 ; out              ;
+; |Square|Res[6]                                                                                              ; |Square|Res[6]                                                                                              ; pin_out          ;
+; |Square|Res[3]                                                                                              ; |Square|Res[3]                                                                                              ; pin_out          ;
+; |Square|Res[0]                                                                                              ; |Square|Res[0]                                                                                              ; pin_out          ;
+; |Square|In1[7]                                                                                              ; |Square|In1[7]                                                                                              ; out              ;
+; |Square|In1[6]                                                                                              ; |Square|In1[6]                                                                                              ; out              ;
+; |Square|In1[4]                                                                                              ; |Square|In1[4]                                                                                              ; out              ;
+; |Square|In1[3]                                                                                              ; |Square|In1[3]                                                                                              ; out              ;
+; |Square|In1[1]                                                                                              ; |Square|In1[1]                                                                                              ; out              ;
+; |Square|In1[0]                                                                                              ; |Square|In1[0]                                                                                              ; out              ;
+; |Square|In2[5]                                                                                              ; |Square|In2[5]                                                                                              ; out              ;
+; |Square|In2[4]                                                                                              ; |Square|In2[4]                                                                                              ; out              ;
+; |Square|In2[3]                                                                                              ; |Square|In2[3]                                                                                              ; out              ;
+; |Square|SRA8:inst1|inst[6]                                                                                  ; |Square|SRA8:inst1|inst[6]                                                                                  ; out              ;
+; |Square|SRA8:inst1|inst[3]                                                                                  ; |Square|SRA8:inst1|inst[3]                                                                                  ; out              ;
+; |Square|SRA8:inst1|inst[0]                                                                                  ; |Square|SRA8:inst1|inst[0]                                                                                  ; out              ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                      ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                      ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                     ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                   ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                   ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUa|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[6]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[6]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[5]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[5]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[4]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[4]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[3]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[3]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[2]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[2]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[1]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[1]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[0]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst3[0]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[6]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[6]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[5]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[5]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[4]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[4]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[3]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[3]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[2]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[2]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[1]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[1]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[0]                                                           ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst1[0]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[5]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[5]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[4]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[4]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[3]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[3]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[2]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[2]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[1]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[1]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[0]                                                            ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[0]                                                            ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|inst2             ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|inst2             ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst      ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst      ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1     ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1     ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|inst2           ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|inst2           ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst    ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|inst2           ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|inst2           ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst    ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|inst2           ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|inst2           ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst    ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|inst2            ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|inst2            ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst     ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst     ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1    ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1    ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|inst2          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|inst2          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1 ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1 ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|inst2          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|inst2          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1 ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1 ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst   ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst  ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst  ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[7]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[7]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[6]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[6]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[5]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[5]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[4]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[4]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[3]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[3]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[2]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[2]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[1]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[1]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[0]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst3[0]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[7]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[7]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[6]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[6]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[5]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[5]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[4]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[4]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[3]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[3]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[2]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[2]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[1]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[1]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[0]                                         ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst1[0]                                         ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[7]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[7]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[6]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[6]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[5]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[5]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[4]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[4]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[3]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[3]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[2]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[2]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[1]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[1]                                          ; out0             ;
+; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[0]                                          ; |Square|SRA8:inst1|MinUnit:inst4|MinMaxU:inst|8mux21:inst1|inst[0]                                          ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                     ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                      ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                      ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                     ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                     ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                   ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                   ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                    ; |Square|SRA8:inst1|AVU:AVUb|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                    ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[6]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[6]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[5]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[5]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[4]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[4]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[3]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[3]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[2]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[2]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[1]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[1]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[0]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst3[0]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[6]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[6]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[5]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[5]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[4]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[4]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[3]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[3]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[2]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[2]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[1]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[1]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[0]                                                           ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst1[0]                                                           ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[4]                                                            ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[4]                                                            ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[3]                                                            ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[3]                                                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|inst2                                       ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|inst2                                       ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst                                ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst                                ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|inst2                                     ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|inst2                                     ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst                              ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst                              ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|inst2                                     ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|inst2                                     ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst                              ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst                              ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|inst2                                     ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|inst2                                     ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst                              ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst                              ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|inst2                                      ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|inst2                                      ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst                               ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst                               ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1                              ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1                              ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                              ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                              ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                           ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                           ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                            ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                           ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                           ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst                             ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst                             ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                            ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                            ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst3[4]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst3[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst3[3]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst3[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst3[2]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst3[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst3[1]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst3[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst3[0]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst3[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[6]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[6]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[5]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[4]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[3]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[2]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[1]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[0]                                                                ; |Square|SRA8:inst1|8mux21:Selector3|inst1[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst[4]                                                                 ; |Square|SRA8:inst1|8mux21:Selector3|inst[4]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst[3]                                                                 ; |Square|SRA8:inst1|8mux21:Selector3|inst[3]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst[2]                                                                 ; |Square|SRA8:inst1|8mux21:Selector3|inst[2]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst[1]                                                                 ; |Square|SRA8:inst1|8mux21:Selector3|inst[1]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst[0]                                                                 ; |Square|SRA8:inst1|8mux21:Selector3|inst[0]                                                                 ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[3]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[3]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[2]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[2]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[1]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[2]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[2]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[1]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[0]                                                       ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[0]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[5]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[5]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[4]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[4]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[3]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[3]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[2]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[2]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[1]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[1]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[0]                                                        ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[0]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst5                                                           ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst5                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst6                                                           ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst6                                                           ; regout           ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst                              ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst                              ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1                             ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1                             ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|inst2                                   ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|inst2                                   ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst                            ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst                            ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1                          ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|inst2                                   ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|inst2                                   ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst                            ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst                            ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1                          ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|inst2                                   ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|inst2                                   ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst                            ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst                            ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1                          ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|inst2                                    ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|inst2                                    ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst                             ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst                             ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1                            ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1                            ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                            ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst                            ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|inst2                                  ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|inst2                                  ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst                          ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                         ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1                         ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|inst2                                  ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|inst2                                  ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst                          ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                         ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1                         ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst                           ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst                           ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                          ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst                          ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[7]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[7]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[6]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[6]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[5]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[5]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[4]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[4]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[3]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[3]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[2]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[2]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[1]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[1]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst19[0]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst19[0]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[6]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[6]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[5]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[5]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[4]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[4]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[3]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[3]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[2]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[2]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[1]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[1]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[0]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst18[0]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[5]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[4]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[3]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[2]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[1]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[0]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst4[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[6]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[6]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[5]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[4]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[3]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[1]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[0]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst3[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[7]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[7]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[6]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[6]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[5]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[5]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[4]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[4]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[3]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[3]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[2]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[2]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[1]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[1]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst21[0]                                                               ; |Square|SRA8:inst1|8mux51:Selector2|inst21[0]                                                               ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[7]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[7]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[6]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[6]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[5]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[4]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[3]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[2]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[1]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst1[0]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst1[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[5]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst2[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[4]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst2[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[3]                                                                ; |Square|SRA8:inst1|8mux51:Selector2|inst2[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[4]                                                                 ; |Square|SRA8:inst1|8mux51:Selector2|inst[4]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[3]                                                                 ; |Square|SRA8:inst1|8mux51:Selector2|inst[3]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[1]                                                                 ; |Square|SRA8:inst1|8mux51:Selector2|inst[1]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[0]                                                                 ; |Square|SRA8:inst1|8mux51:Selector2|inst[0]                                                                 ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[7]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[7]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[6]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[6]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[5]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[5]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[4]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[4]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[3]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[3]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[2]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[2]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[1]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[0]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst3[0]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[6]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[6]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[4]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[4]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[3]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[3]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[1]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[0]                                                       ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[0]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[7]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[7]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[6]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[6]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[5]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[5]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[4]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[4]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[3]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[3]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[2]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[2]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[1]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[1]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[0]                                                        ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst[0]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst3                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst3                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst2                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst2                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst1                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst1                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst                                                            ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst                                                            ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst4                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst4                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst5                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst5                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst6                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst6                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst7                                                           ; |Square|SRA8:inst1|Register8:R2|R8DFFs:inst|inst7                                                           ; regout           ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|inst2             ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|inst2             ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst      ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst      ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1     ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1     ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|inst2           ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|inst2           ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst    ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|inst2           ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|inst2           ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst    ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|inst2           ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|inst2           ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst    ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst    ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst1|inst1  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|inst2            ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|inst2            ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst     ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst     ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1    ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst|inst1    ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst1|inst1   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|inst2          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|inst2          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1 ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1|inst1 ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|inst2          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|inst2          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1 ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst1|inst1 ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst   ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst|inst   ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst  ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|Sub8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1|inst  ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[7]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[7]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[6]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[6]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[5]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[5]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[4]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[4]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[3]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[3]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[2]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[2]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[1]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[1]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[0]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst3[0]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[7]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[7]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[6]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[6]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[5]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[5]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[4]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[4]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[3]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[3]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[2]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[2]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[1]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[1]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[0]                                         ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst1[0]                                         ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[7]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[7]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[6]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[6]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[5]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[5]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[4]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[4]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[3]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[3]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[2]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[2]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[1]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[1]                                          ; out0             ;
+; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[0]                                          ; |Square|SRA8:inst1|MaxUnit:inst2|MinMaxU:inst|8mux21:inst1|inst[0]                                          ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[7]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[7]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[6]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[6]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[5]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[4]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[3]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[2]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[1]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst3[0]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst3[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[6]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[6]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[5]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[4]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[3]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[2]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[1]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[0]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst1[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[5]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[5]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[4]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[4]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[3]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[3]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[2]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[2]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[1]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[1]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[0]                                                                ; |Square|SRA8:inst1|8mux31:Selector1|inst2[0]                                                                ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[7]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[7]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[6]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[6]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[4]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[4]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[3]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[3]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[1]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[1]                                                                 ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[0]                                                                 ; |Square|SRA8:inst1|8mux31:Selector1|inst[0]                                                                 ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[7]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[7]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[6]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[6]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[5]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[5]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[4]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[4]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[3]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[3]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[2]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[2]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[1]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[0]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst3[0]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[6]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[6]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[5]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[5]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[4]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[4]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[3]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[3]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[1]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[1]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[0]                                                       ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[0]                                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[7]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[7]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[6]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[6]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[5]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[5]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[4]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[4]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[3]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[3]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[2]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[2]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[1]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[1]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[0]                                                        ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst[0]                                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst3                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst3                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst2                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst2                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst1                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst1                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst                                                            ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst                                                            ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst4                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst4                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst5                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst5                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst6                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst6                                                           ; regout           ;
+; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst7                                                           ; |Square|SRA8:inst1|Register8:R1|R8DFFs:inst|inst7                                                           ; regout           ;
+; |Square|Controller:inst|NextStateLogic:inst|inst16                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst16                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst13                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst13                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst15                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst15                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst12                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst12                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst14                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst14                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst10                                                          ; |Square|Controller:inst|NextStateLogic:inst|inst10                                                          ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst7                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst7                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst8                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst8                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst6                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst6                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst3                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst3                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst2                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst2                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst1                                                           ; |Square|Controller:inst|NextStateLogic:inst|inst1                                                           ; out0             ;
+; |Square|Controller:inst|NextStateLogic:inst|inst                                                            ; |Square|Controller:inst|NextStateLogic:inst|inst                                                            ; out0             ;
+; |Square|Controller:inst|ctrDFFs:inst1|inst3                                                                 ; |Square|Controller:inst|ctrDFFs:inst1|inst3                                                                 ; regout           ;
+; |Square|Controller:inst|ctrDFFs:inst1|inst2                                                                 ; |Square|Controller:inst|ctrDFFs:inst1|inst2                                                                 ; regout           ;
+; |Square|Controller:inst|ctrDFFs:inst1|inst1                                                                 ; |Square|Controller:inst|ctrDFFs:inst1|inst1                                                                 ; regout           ;
+; |Square|Controller:inst|OutputLogic:inst2|inst1                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst1                                                             ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst3                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst3                                                             ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst8                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst8                                                             ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst4                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst4                                                             ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst22                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst22                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst23                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst23                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst27                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst27                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst25                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst25                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst26                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst26                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst24                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst24                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst                                                              ; |Square|Controller:inst|OutputLogic:inst2|inst                                                              ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst21                                                            ; |Square|Controller:inst|OutputLogic:inst2|inst21                                                            ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst2                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst2                                                             ; out0             ;
+; |Square|Controller:inst|OutputLogic:inst2|inst7                                                             ; |Square|Controller:inst|OutputLogic:inst2|inst7                                                             ; out0             ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                   ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                          ; Output Port Name                                                                   ; Output Port Type ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; |Square|Res[7]                                                                     ; |Square|Res[7]                                                                     ; pin_out          ;
+; |Square|Res[5]                                                                     ; |Square|Res[5]                                                                     ; pin_out          ;
+; |Square|Res[4]                                                                     ; |Square|Res[4]                                                                     ; pin_out          ;
+; |Square|Res[2]                                                                     ; |Square|Res[2]                                                                     ; pin_out          ;
+; |Square|In1[5]                                                                     ; |Square|In1[5]                                                                     ; out              ;
+; |Square|In1[2]                                                                     ; |Square|In1[2]                                                                     ; out              ;
+; |Square|In2[7]                                                                     ; |Square|In2[7]                                                                     ; out              ;
+; |Square|In2[6]                                                                     ; |Square|In2[6]                                                                     ; out              ;
+; |Square|In2[2]                                                                     ; |Square|In2[2]                                                                     ; out              ;
+; |Square|In2[1]                                                                     ; |Square|In2[1]                                                                     ; out              ;
+; |Square|In2[0]                                                                     ; |Square|In2[0]                                                                     ; out              ;
+; |Square|SRA8:inst1|inst[7]                                                         ; |Square|SRA8:inst1|inst[7]                                                         ; out              ;
+; |Square|SRA8:inst1|inst[5]                                                         ; |Square|SRA8:inst1|inst[5]                                                         ; out              ;
+; |Square|SRA8:inst1|inst[4]                                                         ; |Square|SRA8:inst1|inst[4]                                                         ; out              ;
+; |Square|SRA8:inst1|inst[2]                                                         ; |Square|SRA8:inst1|inst[2]                                                         ; out              ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[7]                                   ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[7]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[6]                                   ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[6]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[7]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[7]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[6]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[6]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[5]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[5]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[2]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[2]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[1]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[1]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[0]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[0]                                   ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1      ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1      ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|inst2           ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst17|inst2           ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|inst2           ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst3|FA:inst18|inst2           ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[7]                                       ; |Square|SRA8:inst1|8mux21:Selector3|inst1[7]                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[7]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[6]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[6]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[6]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[6]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[3]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[3]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[7]                               ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[7]                               ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[6]                               ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[6]                               ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst1                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst1                                  ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst                                   ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst                                   ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst4                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst4                                  ; regout           ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1  ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1 ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1 ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1 ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1 ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[7]                                      ; |Square|SRA8:inst1|8mux51:Selector2|inst18[7]                                      ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[7]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst4[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[6]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst4[6]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[7]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst3[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[2]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst3[2]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[7]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[6]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[6]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[2]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[2]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[1]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[1]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[0]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[0]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[6]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[6]                                        ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[5]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[5]                                        ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[2]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[2]                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[5]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[5]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[2]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[2]                              ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[7]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst1[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[7]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst2[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[6]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst2[6]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[5]                                        ; |Square|SRA8:inst1|8mux31:Selector1|inst[5]                                        ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[2]                                        ; |Square|SRA8:inst1|8mux31:Selector1|inst[2]                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[2]                              ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[2]                              ; out0             ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                   ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                          ; Output Port Name                                                                   ; Output Port Type ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; |Square|Res[1]                                                                     ; |Square|Res[1]                                                                     ; pin_out          ;
+; |Square|In1[2]                                                                     ; |Square|In1[2]                                                                     ; out              ;
+; |Square|In2[2]                                                                     ; |Square|In2[2]                                                                     ; out              ;
+; |Square|In2[1]                                                                     ; |Square|In2[1]                                                                     ; out              ;
+; |Square|In2[0]                                                                     ; |Square|In2[0]                                                                     ; out              ;
+; |Square|SRA8:inst1|inst[1]                                                         ; |Square|SRA8:inst1|inst[1]                                                         ; out              ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[7]                                   ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[7]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[6]                                   ; |Square|SRA8:inst1|AVU:AVUa|8mux21:inst1|inst[6]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[7]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[7]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[6]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[6]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[5]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[5]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[2]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[2]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[1]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[1]                                   ; out0             ;
+; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[0]                                   ; |Square|SRA8:inst1|AVU:AVUb|8mux21:inst1|inst[0]                                   ; out0             ;
+; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1      ; |Square|SRA8:inst1|Sub8S:inst8|Adder8:inst|Adder4S:inst|FA:inst|HA:inst|inst1      ; out0             ;
+; |Square|SRA8:inst1|8mux21:Selector3|inst1[7]                                       ; |Square|SRA8:inst1|8mux21:Selector3|inst1[7]                                       ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[7]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[6]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[6]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[5]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[5]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[4]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[4]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[0]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst3[0]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[6]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[6]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[5]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[5]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[4]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[4]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[3]                              ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst1[3]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[7]                               ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[7]                               ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[6]                               ; |Square|SRA8:inst1|Register8:R3|8mux21:inst1|inst[6]                               ; out0             ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst3                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst3                                  ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst2                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst2                                  ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst1                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst1                                  ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst                                   ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst                                   ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst4                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst4                                  ; regout           ;
+; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst7                                  ; |Square|SRA8:inst1|Register8:R3|R8DFFs:inst|inst7                                  ; regout           ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1  ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst|inst1  ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1 ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst|inst1 ; out0             ;
+; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1 ; |Square|SRA8:inst1|Adder8S:inst7|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst|inst1 ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst18[7]                                      ; |Square|SRA8:inst1|8mux51:Selector2|inst18[7]                                      ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[7]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst4[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst4[6]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst4[6]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[7]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst3[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst3[2]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst3[2]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[2]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[2]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[1]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[1]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst2[0]                                       ; |Square|SRA8:inst1|8mux51:Selector2|inst2[0]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[6]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[6]                                        ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[5]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[5]                                        ; out0             ;
+; |Square|SRA8:inst1|8mux51:Selector2|inst[2]                                        ; |Square|SRA8:inst1|8mux51:Selector2|inst[2]                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[5]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[5]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[2]                              ; |Square|SRA8:inst1|Register8:R2|8mux21:inst1|inst1[2]                              ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst1[7]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst1[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[7]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst2[7]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst2[6]                                       ; |Square|SRA8:inst1|8mux31:Selector1|inst2[6]                                       ; out0             ;
+; |Square|SRA8:inst1|8mux31:Selector1|inst[2]                                        ; |Square|SRA8:inst1|8mux31:Selector1|inst[2]                                        ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[7]                              ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[7]                              ; out0             ;
+; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[2]                              ; |Square|SRA8:inst1|Register8:R1|8mux21:inst1|inst1[2]                              ; out0             ;
++------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Dec 14 22:18:22 2025
+Info: Command: quartus_sim --simulation_results_format=VWF SRA8 -c SRA8
+Info (324025): Using vector source file "D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Squarewf.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      85.93 %
+Info (328052): Number of transitions in simulation is 2883
+Info (324045): Vector file SRA8.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Sun Dec 14 22:18:22 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

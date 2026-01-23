@@ -1,0 +1,419 @@
+|1R2W
+O3 <= O3~0.DB_MAX_OUTPUT_PORT_TYPE
+WEB => 2to4WD:inst1.WE
+WAB0 => 2to4WD:inst1.WA0
+WAB1 => 2to4WD:inst1.WA1
+WEA => 2to4WD:inst.WE
+WAA0 => 2to4WD:inst.WA0
+WAA1 => 2to4WD:inst.WA1
+RA1 => 2to4RD:inst2.RA1
+RA0 => 2to4RD:inst2.RA0
+RE => 2to4RD:inst2.RE
+IA3 => Word:inst4.IA3
+IA3 => Word:inst5.IA3
+IA3 => Word:inst6.IA3
+IA3 => Word:inst7.IA3
+IB3 => Word:inst4.IB3
+IB3 => Word:inst5.IB3
+IB3 => Word:inst6.IB3
+IB3 => Word:inst7.IB3
+IA2 => Word:inst4.IA2
+IA2 => Word:inst5.IA2
+IA2 => Word:inst6.IA2
+IA2 => Word:inst7.IA2
+IB2 => Word:inst4.IB2
+IB2 => Word:inst5.IB2
+IB2 => Word:inst6.IB2
+IB2 => Word:inst7.IB2
+IA1 => Word:inst4.IA1
+IA1 => Word:inst5.IA1
+IA1 => Word:inst6.IA1
+IA1 => Word:inst7.IA1
+IB1 => Word:inst4.IB1
+IB1 => Word:inst5.IB1
+IB1 => Word:inst6.IB1
+IB1 => Word:inst7.IB1
+IA0 => Word:inst4.IA0
+IA0 => Word:inst5.IA0
+IA0 => Word:inst6.IA0
+IA0 => Word:inst7.IA0
+IB0 => Word:inst4.IB0
+IB0 => Word:inst5.IB0
+IB0 => Word:inst6.IB0
+IB0 => Word:inst7.IB0
+CLK => Word:inst4.CLK
+CLK => Word:inst5.CLK
+CLK => Word:inst6.CLK
+CLK => Word:inst7.CLK
+O2 <= O2~0.DB_MAX_OUTPUT_PORT_TYPE
+O1 <= O1~0.DB_MAX_OUTPUT_PORT_TYPE
+O0 <= O0~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|1R2W|Word:inst4
+O3 <= RFC:inst.O
+WB => RFC:inst.WS1
+WB => RFC:inst1.WS1
+WB => RFC:inst2.WS1
+WB => RFC:inst3.WS1
+WA => RFC:inst.WS0
+WA => RFC:inst1.WS0
+WA => RFC:inst2.WS0
+WA => RFC:inst3.WS0
+RS => RFC:inst.RS
+RS => RFC:inst1.RS
+RS => RFC:inst2.RS
+RS => RFC:inst3.RS
+IA3 => RFC:inst.Input0
+IB3 => RFC:inst.Input1
+CLK => RFC:inst.CLK
+CLK => RFC:inst1.CLK
+CLK => RFC:inst2.CLK
+CLK => RFC:inst3.CLK
+O2 <= RFC:inst1.O
+IA2 => RFC:inst1.Input0
+IB2 => RFC:inst1.Input1
+O1 <= RFC:inst2.O
+IA1 => RFC:inst2.Input0
+IB1 => RFC:inst2.Input1
+O0 <= RFC:inst3.O
+IA0 => RFC:inst3.Input0
+IB0 => RFC:inst3.Input1
+
+
+|1R2W|Word:inst4|RFC:inst
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst4|RFC:inst1
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst4|RFC:inst2
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst4|RFC:inst3
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|2to4WD:inst1
+W0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst.IN0
+WE => inst1.IN0
+WE => inst2.IN0
+WE => inst3.IN0
+WA0 => inst4.IN0
+WA0 => inst1.IN2
+WA0 => inst3.IN2
+WA1 => inst5.IN0
+WA1 => inst2.IN2
+WA1 => inst3.IN1
+W1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+W2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+W3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|1R2W|2to4WD:inst
+W0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst.IN0
+WE => inst1.IN0
+WE => inst2.IN0
+WE => inst3.IN0
+WA0 => inst4.IN0
+WA0 => inst1.IN2
+WA0 => inst3.IN2
+WA1 => inst5.IN0
+WA1 => inst2.IN2
+WA1 => inst3.IN1
+W1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+W2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+W3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|1R2W|2to4RD:inst2
+R0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RE => inst.IN0
+RE => inst1.IN0
+RE => inst2.IN0
+RE => inst3.IN0
+RA0 => inst4.IN0
+RA0 => inst1.IN2
+RA0 => inst3.IN2
+RA1 => inst5.IN0
+RA1 => inst2.IN2
+RA1 => inst3.IN1
+R1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+R2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+R3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|1R2W|Word:inst5
+O3 <= RFC:inst.O
+WB => RFC:inst.WS1
+WB => RFC:inst1.WS1
+WB => RFC:inst2.WS1
+WB => RFC:inst3.WS1
+WA => RFC:inst.WS0
+WA => RFC:inst1.WS0
+WA => RFC:inst2.WS0
+WA => RFC:inst3.WS0
+RS => RFC:inst.RS
+RS => RFC:inst1.RS
+RS => RFC:inst2.RS
+RS => RFC:inst3.RS
+IA3 => RFC:inst.Input0
+IB3 => RFC:inst.Input1
+CLK => RFC:inst.CLK
+CLK => RFC:inst1.CLK
+CLK => RFC:inst2.CLK
+CLK => RFC:inst3.CLK
+O2 <= RFC:inst1.O
+IA2 => RFC:inst1.Input0
+IB2 => RFC:inst1.Input1
+O1 <= RFC:inst2.O
+IA1 => RFC:inst2.Input0
+IB1 => RFC:inst2.Input1
+O0 <= RFC:inst3.O
+IA0 => RFC:inst3.Input0
+IB0 => RFC:inst3.Input1
+
+
+|1R2W|Word:inst5|RFC:inst
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst5|RFC:inst1
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst5|RFC:inst2
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst5|RFC:inst3
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst6
+O3 <= RFC:inst.O
+WB => RFC:inst.WS1
+WB => RFC:inst1.WS1
+WB => RFC:inst2.WS1
+WB => RFC:inst3.WS1
+WA => RFC:inst.WS0
+WA => RFC:inst1.WS0
+WA => RFC:inst2.WS0
+WA => RFC:inst3.WS0
+RS => RFC:inst.RS
+RS => RFC:inst1.RS
+RS => RFC:inst2.RS
+RS => RFC:inst3.RS
+IA3 => RFC:inst.Input0
+IB3 => RFC:inst.Input1
+CLK => RFC:inst.CLK
+CLK => RFC:inst1.CLK
+CLK => RFC:inst2.CLK
+CLK => RFC:inst3.CLK
+O2 <= RFC:inst1.O
+IA2 => RFC:inst1.Input0
+IB2 => RFC:inst1.Input1
+O1 <= RFC:inst2.O
+IA1 => RFC:inst2.Input0
+IB1 => RFC:inst2.Input1
+O0 <= RFC:inst3.O
+IA0 => RFC:inst3.Input0
+IB0 => RFC:inst3.Input1
+
+
+|1R2W|Word:inst6|RFC:inst
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst6|RFC:inst1
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst6|RFC:inst2
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst6|RFC:inst3
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst7
+O3 <= RFC:inst.O
+WB => RFC:inst.WS1
+WB => RFC:inst1.WS1
+WB => RFC:inst2.WS1
+WB => RFC:inst3.WS1
+WA => RFC:inst.WS0
+WA => RFC:inst1.WS0
+WA => RFC:inst2.WS0
+WA => RFC:inst3.WS0
+RS => RFC:inst.RS
+RS => RFC:inst1.RS
+RS => RFC:inst2.RS
+RS => RFC:inst3.RS
+IA3 => RFC:inst.Input0
+IB3 => RFC:inst.Input1
+CLK => RFC:inst.CLK
+CLK => RFC:inst1.CLK
+CLK => RFC:inst2.CLK
+CLK => RFC:inst3.CLK
+O2 <= RFC:inst1.O
+IA2 => RFC:inst1.Input0
+IB2 => RFC:inst1.Input1
+O1 <= RFC:inst2.O
+IA1 => RFC:inst2.Input0
+IB1 => RFC:inst2.Input1
+O0 <= RFC:inst3.O
+IA0 => RFC:inst3.Input0
+IB0 => RFC:inst3.Input1
+
+
+|1R2W|Word:inst7|RFC:inst
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst7|RFC:inst1
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst7|RFC:inst2
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+
+|1R2W|Word:inst7|RFC:inst3
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+Input1 => inst8.IN0
+WS1 => inst8.IN1
+WS1 => inst5.IN0
+WS0 => inst9.IN1
+WS0 => inst7.IN0
+Input0 => inst9.IN2
+RS => inst4.OE
+
+

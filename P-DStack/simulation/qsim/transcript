@@ -1,0 +1,11 @@
+# do PD.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PD
+# 
+# Top level modules:
+# 	PD
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PD_vlg_sample_tst
+# ** Error: PD.vt(33): near "/": syntax error, unexpected '/', expecting ')'
+# ** Error: d:/e/1subject/hk2/nhap_mon_mach_so/lab/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./PD.do line 4
